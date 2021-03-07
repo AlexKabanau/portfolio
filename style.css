@@ -49,6 +49,7 @@ body {
 .theme-button {
   position: relative;
   margin-top: 20px;
+  margin-left: 56px;
   padding-top: 7px;
   padding-right: 16px;
   padding-bottom: 7px;
@@ -214,4 +215,39 @@ body {
 .footer-phone {
   padding-left: 25px;
   background-image: url("img/icon-phone.svg");
+}
+
+/* Light theme */
+
+body.light-theme {
+  color: #222222;
+  background-color: #f2f4f6;
+  background-image: url("basic-light-theme/img/hero-bg.jpg");
+}
+.light-theme .page-header a {
+  color: #288be6;
+}
+.light-theme .level {
+  background-color: #ffffff;
+  border: 1px solid #86c3fa;
+}
+.light-theme .level div {
+  background-color: #288be6;
+}
+.light-theme .button {
+  background-color: #288be6;
+  color: #ffffff;
+}
+.light-theme .page-footer {
+  background-color: #00417d;
+}
+.light-theme .page-footer a {
+  color: #ffffff;
+}
+.light-theme .footer-email {
+  background-image: url("basic-light-theme/img/icon-email-footer.svg");
+}
+
+.light-theme .footer-phone {
+  background-image: url("basic-light-theme/img/icon-phone-footer.svg");
 }
