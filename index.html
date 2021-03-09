@@ -7,7 +7,7 @@
     <title>Портфолио Junior</title>
   </head>
 
-  <body class="page">
+  <body class="page dark-theme">
     <header class="page-header">
       <div class="container">
         <a href="mailto:Azraill89@mail.ru">Azraill89@mail.ru</a>
@@ -32,6 +32,10 @@
         <figure class="user-image">
           <img src="files/user.jpg" width="928" height="536" alt="Фотография Неопознанного Енота">
         </figure>
+        <div class="news-stats">
+          <button class="heart" type="button"><span class="likes-number">9</span></button>
+          <time datetime="2019-12-22">22 декабря 2019</time>
+        </div>
         <div>
           <h3>Пара слов о себе</h3>
           <p>Текст с парой слов о себе.</p>
@@ -39,6 +43,11 @@
         <div>
           <h3>Чем могу быть полезен</h3>
           <p>Текст о том, чем могу быть полезен.</p>
+        </div>
+
+        <div class="tooltip">
+          <span class="tooltip-text"></span>
+          <button class="button close-button" type="button"><span>Закрыть</span></button>
         </div>
 
         <div class="skills">
@@ -49,8 +58,25 @@
             <dt class="skill-css">CSS</dt>
             <dd class="level"><div style="width: 40%">40%</div></dd>
           </dl>
+          <p>Редакция Flashnews! подготовила подарок для своих подписчиков - приложение <button class="tooltip-button" type="button" data-tooltip-text="это когда у тебя в гостиной покемоны">дополненной реальности</button>, в котором вы сможете погладить <button class="tooltip-button" type="button" data-tooltip-text="что-то среднее между свиньей и тушканчиком">трубкозуба</button>, вырастить <button class="tooltip-button" type="button" data-tooltip-text="сам не знаю, погугли">питахайю</button> или поговорить с <button class="tooltip-button" type="button" data-tooltip-text="доступно только для владельцев годовой подписки">Кексом</button>.</p>
         </div>
       </div>
+    </section>
+
+    <section class="comment-feed container">
+      <h2>Комментарии</h2>
+      <ol class="comment-list">
+        <li class="user-comment">Хочу!!!</li>
+        <li class="user-comment">Я попробовал - это офигенно!</li>
+        <li class="user-comment">Если надеть шапочку из фольги, приложение перестаёт работать. Отписка</li>
+      </ol>
+      <form action="https://echo.htmlacademy.ru/courses" method="post" class="comment-form">
+        <div class="comment-inner">
+          <label class="comment-label" for="comment-textarea">ваш комментарий</label>
+          <textarea class="comment-field comment-area" rows="3" placeholder="Комментарий" required id="comment-textarea"></textarea>
+        </div>
+        <button class="button submit-button" type="submit">Отправить</button>
+      </form>
     </section>
 
     <section class="portfolio">
