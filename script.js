@@ -7,7 +7,7 @@ themeButtom.onclick = function () {
 };
 
 /* likes counter */
-/* let heart = document.querySelector('.heart');
+ let heart = document.querySelector('.heart');
 let likesNumber = document.querySelector('.likes-number');
 
 
@@ -19,7 +19,7 @@ heart.onclick = function () {
   }
 
   heart.classList.toggle('added');
-}; */
+}; 
 
 /* comment list */
 
@@ -40,7 +40,7 @@ commentForm.onsubmit = function (evt) {
 
 /* tooltips */
 
-/*
+
 let tooltip = document.querySelector('.tooltip');
 let closeButton = document.querySelector('.close-button');
 let tooltipButtons = document.querySelectorAll('.tooltip-button');
@@ -62,4 +62,37 @@ for (let tooltipButton of tooltipButtons) {
 };
 }
 
-*/
+
+
+/*submit form length*/
+
+let commentForm = document.querySelector('.comment-form');
+let commentList = document.querySelector('.comment-list');
+let commentField = document.querySelector('.comment-field');
+let charCounter = document.querySelector('.char-counter');
+let submitButton = document.querySelector('.submit-button');
+
+commentForm.onsubmit = function (evt) {
+  evt.preventDefault();
+
+  let newComment = document.createElement('li');
+  newComment.classList.add('user-comment');
+  newComment.textContent = commentField.value;
+  commentField.value = '';
+  commentList.append(newComment);
+  charCounter.textContent = 0;
+  // Добавьте код сюда
+
+};
+
+commentField.oninput = function () {
+  charCounter.textContent = commentField.value.length;
+
+  if (commentField.value.length > 142) {
+    commentForm.classList.add('warning');
+    submitButton.disabled = true;
+  } else {
+    commentForm.classList.remove('warning');
+    submitButton.disabled = false;
+  }
+};

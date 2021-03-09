@@ -429,7 +429,7 @@ body.light-theme {
 .heart .likes-number {
   margin-left: 24px;
   line-height: 14px;
-
+}
   .light-theme .header-link {
     color: #6653d9;
   }
@@ -491,4 +491,33 @@ body.light-theme {
   .dark-theme .heart:active {
     opacity: 1;
     background-image: url("img/icon-heart-dark-active.svg");
+  }
+
+  .text-counter {
+    display: inline-block;
+    vertical-align: baseline;
+    padding: 7px 0;
+    margin-right: auto;
+  }
+  
+  .comment-form.warning .comment-label {
+    color: #f05b29;
+  }
+  
+  .comment-form.warning .comment-area {
+    color: #f05b29;
+    border-color: #f05b29;
+  }
+  
+  .comment-form.warning .comment-area:focus {
+    outline-color: #f05b29;
+  }
+  
+  .comment-form.warning .char-counter {
+    color: #f05b29;
+    font-weight: bold;
+  }
+  
+  .submit-button:disabled {
+    opacity: 0.25;
   }
