@@ -2,15 +2,19 @@ import React from 'react';
 import './style.css';
 import sunIcon from '../../img/icons/sun.svg';
 import moonIcon from '../../img/icons/moon.svg';
+import { NavLink } from 'react-router-dom';
 
 export default function Navbar() {
+  const activeLink = 'nav-list__link nav-list__link--active';
+  const normalLink = 'nav-list__link';
+
   return (
     <nav className="nav">
       <div className="container">
         <div className="nav-row">
-          <a href="./index.html" className="logo">
+          <NavLink to="/" className="logo">
             <strong>Portfolio</strong>
-          </a>
+          </NavLink>
 
           <button className="dark-mode-btn">
             <img src={sunIcon} alt="Light mode" className="dark-mode-btn__icon" />
@@ -19,19 +23,23 @@ export default function Navbar() {
 
           <ul className="nav-list">
             <li className="nav-list__item">
-              <a href="./index.html" className="nav-list__link nav-list__link--active">
+              <NavLink to="/" className={({ isActive }) => (isActive ? activeLink : normalLink)}>
                 Home
-              </a>
+              </NavLink>
             </li>
             <li className="nav-list__item">
-              <a href="./projects.html" className="nav-list__link">
+              <NavLink
+                to="/projects"
+                className={({ isActive }) => (isActive ? activeLink : normalLink)}>
                 Projects
-              </a>
+              </NavLink>
             </li>
             <li className="nav-list__item">
-              <a href="./contacts.html" className="nav-list__link">
+              <NavLink
+                to="/contacts"
+                className={({ isActive }) => (isActive ? activeLink : normalLink)}>
                 Contacts
-              </a>
+              </NavLink>
             </li>
           </ul>
         </div>
