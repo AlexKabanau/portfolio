@@ -8,12 +8,13 @@ export default function Projects() {
       <div className="container">
         <h2 className="title-1">Projects</h2>
         <ul className="projects">
-          {projects.map((project, key) => (
+          {projects.map((project, index) => (
             <Project
-              key={key}
+              key={index}
               imageUrl={project.img}
               linkUrl={project.gitHubLink}
               projectName={project.title}
+              id={index}
             />
           ))}
         </ul>

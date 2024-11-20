@@ -1,8 +1,9 @@
 import React from 'react';
 import './style.css';
-import sunIcon from '../../img/icons/sun.svg';
-import moonIcon from '../../img/icons/moon.svg';
+// import sunIcon from '../../img/icons/sun.svg';
+// import moonIcon from '../../img/icons/moon.svg';
 import { NavLink } from 'react-router-dom';
+import ButtonDarkMode from '../buttonDarkMode/ButtonDarkMode';
 
 export default function Navbar() {
   const activeLink = 'nav-list__link nav-list__link--active';
@@ -16,10 +17,7 @@ export default function Navbar() {
             <strong>Portfolio</strong>
           </NavLink>
 
-          <button className="dark-mode-btn">
-            <img src={sunIcon} alt="Light mode" className="dark-mode-btn__icon" />
-            <img src={moonIcon} alt="Dark mode" className="dark-mode-btn__icon" />
-          </button>
+          <ButtonDarkMode />
 
           <ul className="nav-list">
             <li className="nav-list__item">

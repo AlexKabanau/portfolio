@@ -18,7 +18,7 @@ export const projects = [
     skills: 'Any skills1',
     img: project01,
     cover: project01cover,
-    gitHubLink: 'github.com'
+    gitHubLink: 'github.com',
   },
   {
     title: 'Video service',
