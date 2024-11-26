@@ -12,13 +12,13 @@ export default function Home() {
             <li className="content-list__item">
               <h2 className="title-2">Frontend</h2>
               <p>
-                JavaScript, TypeScript, ReactJS, Angular, Redux, HTML, CSS, NPM, BootStrap,
-                MaterialUI, Yarn, TailwindCSS, StyledComponents
+                Responsive Web, HTML, CSS (SASS/SCSS), JavaScript, TypeScript, React, NextJS, Redux,
+                Axios, RTK, Three.js, Webpack, Jest
               </p>
             </li>
             <li className="content-list__item">
               <h2 className="title-2">Backend</h2>
-              <p>NodeJS, MySQL, MongoDB, PHP, Laravel</p>
+              <p>NodeJS, Prisma</p>
             </li>
           </ul>
         </div>
