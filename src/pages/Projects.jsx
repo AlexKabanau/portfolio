@@ -11,7 +11,7 @@ export default function Projects() {
           {projects.map((project, index) => (
             <Project
               key={index}
-              imageUrl={project.img}
+              imageUrl={project.img[0]}
               linkUrl={project.gitHubLink}
               projectName={project.title}
               id={index}

@@ -1,33 +1,103 @@
-import project01 from '../img/projects/01.jpg';
-import project01cover from '../img/projects/01-big.jpg';
-import project02 from '../img/projects/02.jpg';
-import project02cover from '../img/projects/02-big.jpg';
-import project03 from '../img/projects/03.jpg';
-import project03cover from '../img/projects/03-big.jpg';
-import project04 from '../img/projects/04.jpg';
-import project04cover from '../img/projects/04-big.jpg';
-import project05 from '../img/projects/05.jpg';
-import project05cover from '../img/projects/05-big.jpg';
-import project06 from '../img/projects/06.jpg';
-import project06cover from '../img/projects/06-big.jpg';
-//TODO: add images
+import amazingTrip001 from '../img/projects/amazingTrip/001.png';
+import amazingTrip002 from '../img/projects/amazingTrip/002.png';
+import amazingTrip003 from '../img/projects/amazingTrip/003.png';
+import amazingTrip004 from '../img/projects/amazingTrip/004.png';
+import amazingTrip005 from '../img/projects/amazingTrip/005.png';
+import amazingTrip006 from '../img/projects/amazingTrip/006.png';
+import amazingTrip007 from '../img/projects/amazingTrip/007.png';
+import amazingTrip008 from '../img/projects/amazingTrip/008.png';
+import amazingTrip009 from '../img/projects/amazingTrip/009.png';
+import amazingTrip010 from '../img/projects/amazingTrip/010.png';
+import amazingTrip011 from '../img/projects/amazingTrip/011.png';
+import amazingTrip012 from '../img/projects/amazingTrip/012.png';
+
+import nextPizza001 from '../img/projects/nextPizza/001.png';
+import nextPizza002 from '../img/projects/nextPizza/002.png';
+import nextPizza003 from '../img/projects/nextPizza/003.png';
+import nextPizza004 from '../img/projects/nextPizza/004.png';
+import nextPizza005 from '../img/projects/nextPizza/005.png';
+import nextPizza006 from '../img/projects/nextPizza/006.png';
+import nextPizza007 from '../img/projects/nextPizza/007.png';
+import nextPizza008 from '../img/projects/nextPizza/008.png';
+import nextPizza009 from '../img/projects/nextPizza/009.png';
+import nextPizza010 from '../img/projects/nextPizza/010.png';
+import nextPizza011 from '../img/projects/nextPizza/011.png';
+import nextPizza012 from '../img/projects/nextPizza/012.png';
+import nextPizza013 from '../img/projects/nextPizza/013.png';
+import nextPizza014 from '../img/projects/nextPizza/014.png';
+
+import nosrtBet001 from '../img/projects/nostrBet/001.png';
+
+import reactPizza001 from '../img/projects/reactPizza/001.png';
+import reactPizza002 from '../img/projects/reactPizza/002.png';
+import reactPizza003 from '../img/projects/reactPizza/003.png';
+import reactPizza004 from '../img/projects/reactPizza/004.png';
+import reactPizza005 from '../img/projects/reactPizza/005.png';
+import reactPizza006 from '../img/projects/reactPizza/006.png';
+import reactPizza007 from '../img/projects/reactPizza/007.png';
+
+import todoList001 from '../img/projects/todoList/001.png';
+import todoList002 from '../img/projects/todoList/002.png';
+import todoList003 from '../img/projects/todoList/003.png';
+import todoList004 from '../img/projects/todoList/004.png';
+
+import wots001 from '../img/projects/wots/001.png';
+import wots002 from '../img/projects/wots/002.png';
+import wots003 from '../img/projects/wots/003.png';
+import wots004 from '../img/projects/wots/004.png';
+import wots005 from '../img/projects/wots/005.png';
+import wots006 from '../img/projects/wots/006.png';
+import wots007 from '../img/projects/wots/007.png';
 
 
 export const projects = [
-  {//TODO: add info
+  {
     title: 'Next Pizza',
-    skills: 'Any skills1',
-    img: project01,
-    cover: project01cover,
-    gitHubLink: 'github.com',
+    description: 'A full-fledged online store. A real copy of Dodo Pizza',
+    tools_and_technologies: 'NextJS, TypeScript, Prisma, axios, nextAuth, react-use, zustand, hookForm, bycript, qs, react-dadata, hot-toast, react-insta-stories, tailwind, ShadCN, lucidIcon, zod',
+    responsibilities: [
+      'TailwindCSS, ShadCN, Lucide icons for styles and layout',
+      'Full filtering and product search with server rendering and storing parameters in URI',
+      'Intersection Observer for category highlighting',
+      'Use zustand like a state management',
+      'Use Prisma (. One-to-One, One-to-Many, Many-to-One, Many-to-Many) for backend logic, API for ingredients, API for products',
+      'Product output, adding products to cart',
+      'Authorization and registration using login-password / GitHub / Google',
+      'Use resend for Account confirmation via email',
+      'Use react-hot-toast for notification',
+      'Profile editing',
+      'Purchase of products using Yookassa',
+      'Product output in a modal window or on a separate page (Parallel Routes)',
+      'Sending emails to email upon: registration, order creation and after successful payment',
+      'Vercel for storing database data and deployment applications',
+      'Use react-insta-stories to render Stories',
+    ],
+    img: [
+      nextPizza001,
+      nextPizza002,
+      nextPizza003,
+      nextPizza004,
+      nextPizza005,
+      nextPizza006,
+      nextPizza007,
+      nextPizza008,
+      nextPizza009,
+      nextPizza010,
+      nextPizza011,
+      nextPizza012,
+      nextPizza013,
+      nextPizza014,
+    ],
+    gitHubLink: 'https://github.com/AlexKabanau/NextPizza',
+    deployLink: 'https://next-pizza-coral.vercel.app/'
   },
   {
     title: 'NostrBet',
     description: 'Part of NOSTR network (a decentralization social network), app for creation disputes with bet (e.g. Who will win Champions League 2024), with the ability to create, view, participate or close (croupier role) disputes.',
     tools_and_technologies: 'React, Bootstrap, Lodash, React-bootstrap, React-bottom-scroll-listener, React-dom, React-hook-form, React-icons, React-redux, React-router-dom, React-select, nostr-dev-kit/ndk, RTK, localStorage, nostr-tools, webSocket, Webpack, ESLint, Prettier, Git, HTML, SCSS/ SASS, JavaScript',
     responsibilities: ['Implementing semantic Responsive Web markup using Bootstrap, CSS Modules (Flexbox, CSS Grid)', 'Creating UI Components ( Disputes, DisputeComments, DisputeAnswers, ContacsList, modals), reducers, pages (CreateDet page, Dispute page)', 'Implementing Form validation and submission (React Hook Form, useForm, Controller, React-Select)', 'Implementing functionality for authorized data retrieve using WebSocket and Nostr Dev Kit', 'Implementing data storage by using Redux, localStorage', 'Maintaining code quality participating Code Review and using tools (ESLint, Prettier)'],
-    img: project02,
-    cover: project02cover,
+    img: [nosrtBet001],
+    // cover: nosrtBet001,
     // gitHubLink: 'github.com',
     link: 'https://bet.nostrapps.org/#/login'
   },
@@ -43,10 +113,15 @@ export const projects = [
       'Implementation modification tasks/lists (change filter, change status, change title, delete task/ todoLists)',
       // 'Maintaining code quality participating Code Review and using tools (ESLint, Prettier)'
     ],
-    img: project02,
-    cover: project02cover,
+    img: [
+      todoList001,
+      todoList002,
+      todoList003,
+      todoList004,
+    ],
+    // cover: todoList001,
     gitHubLink: 'https://github.com/AlexKabanau/todolist',
-    link: 'https://bet.nostrapps.org/#/login'//TODO: fix link
+    link: 'https://todolistbyalexkabanau.netlify.app/'
   },
   {
     title: 'Amazing Trip - RollingScopesSchool 2023 Final Project (Education)',
@@ -60,10 +135,23 @@ export const projects = [
       // 'Implementation modification tasks/lists (change filter, change status, change title, delete task/ todoLists)',
       // 'Maintaining code quality participating Code Review and using tools (ESLint, Prettier)'
     ],
-    img: project02,
-    cover: project02cover,
+    img: [
+      amazingTrip001,
+      amazingTrip002,
+      amazingTrip003,
+      amazingTrip004,
+      amazingTrip005,
+      amazingTrip006,
+      amazingTrip007,
+      amazingTrip008,
+      amazingTrip009,
+      amazingTrip010,
+      amazingTrip011,
+      amazingTrip012,
+    ],
+    // cover: amazingTrip001,
     gitHubLink: 'https://github.com/AlexKabanau/rsclone',
-    link: 'https://bet.nostrapps.org/#/login'//TODO: fix link
+    link: 'https://alexkabanau.github.io/rsclone/'
   },
   {
     title: 'React Pizza (Self-Development)',
@@ -80,8 +168,16 @@ export const projects = [
       'Implementation of loading optimization by using React.memo and useCallback',
       'Implementation of reRender optimization by using Outlet',
     ],
-    img: project02,
-    cover: project02cover,
+    img: [
+      reactPizza001,
+      reactPizza002,
+      reactPizza003,
+      reactPizza004,
+      reactPizza005,
+      reactPizza006,
+      reactPizza007,
+    ],
+    // cover: reactPizza001,
     gitHubLink: 'https://github.com/AlexKabanau/ReactPizza/tree/master/react_pizza',
     link: 'https://alexkabanau.github.io/ReactPizza/react_pizza/'
   },
@@ -104,9 +200,17 @@ export const projects = [
       'Implementation of user authorization',
       'Implementation of loading optimization by using React.memo and useCallback',
     ],
-    img: project02,
-    cover: project02cover,
+    img: [
+      wots001,
+      wots002,
+      wots003,
+      wots004,
+      wots005,
+      wots006,
+      wots007,
+    ],
+    // cover: wots001,
     gitHubLink: 'https://github.com/AlexKabanau/Way-of-the-Samurai',
-    link: 'https://bet.nostrapps.org/#/login'//TODO: fix link
+    link: 'https://alexkabanau.github.io/rsclone/'
   },
 ]
