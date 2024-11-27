@@ -12,7 +12,19 @@ export default function Contacts() {
             <p>Minsk, Belarus</p>
           </li>
           <li className="content-list__item">
-            <h2 className="title-2">Telegram / WhatsApp</h2>
+            <h2 className="title-2">
+              <a href="https://t.me/unknown_racoon" target="_blank" rel="noreferrer">
+                Telegram
+              </a>{' '}
+              /{' '}
+              <a href="https://wa.me/375295728470" target="_blank" rel="noreferrer">
+                WhatsApp
+              </a>{' '}
+              /{' '}
+              <a href="https://join.skype.com/invite/puSD1P4ynuct" target="_blank" rel="noreferrer">
+                Skype
+              </a>
+            </h2>
             <p>
               <a href="tel:+37529572870">+375 (29) 572-84-70</a>
             </p>

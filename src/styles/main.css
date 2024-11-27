@@ -518,6 +518,9 @@ body {
 	font-size: 18px;
 	line-height: 1.5;
 }
+.content-list__item .title-2{
+	margin-top: 30px;
+}
 
 .content-list__item p + p {
 	margin-top: 0.5em;
@@ -527,6 +530,17 @@ body {
 	display: flex;
 	gap: 20px;
 }
+
+.work_exp p{
+	text-align: left;
+}
+.work_exp .description,
+.work_exp .responsibilities,
+.work_exp .tools {
+	font-size: 1.0rem;
+}
+
+
 
 /* Footer */
 
@@ -573,6 +587,11 @@ body {
 		font-size: 30px;
 	}
 
+	.container_aboutme .title-2 {
+		margin-bottom: 30px;
+		/* font-size: 30px; */
+	}
+
 	/* Projects */
 
 	.project__title {
@@ -593,10 +612,13 @@ body {
 	.content-list {
 		row-gap: 20px;
 	}
+	
 
 	.content-list__item {
 		font-size: 16px;
 	}
+	
+
 
 	/* Footer */
 
