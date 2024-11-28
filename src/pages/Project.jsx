@@ -5,10 +5,35 @@ import { useParams } from 'react-router-dom';
 import { projects } from '../helpers/projectsList';
 import ButtonLink from '../components/buttonLink/ButtonLink';
 
+// Import Swiper styles
+import Slider from '../components/project/Slider';
+
 export default function Project() {
   const { id } = useParams();
   const project = projects[id];
-  console.log(project);
+
+  // const swiper = new Swiper('.swiper', {
+  //   // Optional parameters
+  //   direction: 'vertical',
+  //   loop: true,
+
+  //   // If we need pagination
+  //   pagination: {
+  //     el: '.swiper-pagination',
+  //   },
+
+  //   // Navigation arrows
+  //   navigation: {
+  //     nextEl: '.swiper-button-next',
+  //     prevEl: '.swiper-button-prev',
+  //   },
+
+  //   // And if we need scrollbar
+  //   scrollbar: {
+  //     el: '.swiper-scrollbar',
+  //   },
+  // });
+  // console.log(project);
 
   return (
     <main className="section">
@@ -16,7 +41,7 @@ export default function Project() {
         <div className="project-details">
           <h1 className="title-1">{project.title}</h1>
 
-          <img src={project.img[0]} alt="" className="project-details__cover" />
+          {/* <img src={project.img[0]} alt="" className="project-details__cover" /> */}
           {/* <div id="slider">
             <input type="radio" name="slider" id="slide1" checked />
             <input type="radio" name="slider" id="slide2" />
@@ -61,7 +86,14 @@ export default function Project() {
               <label htmlFor="slide4"></label>
             </div>
           </div> */}
-          {/* TODO: gallery */}
+
+          <Slider project={project} />
+
+          {/* <marquee behavior="" direction="">
+            {project.img.map((item, key) => (
+              <img key={key} src={item} alt="Project img" />
+            ))}
+          </marquee> */}
           <div className="project-details__desc">
             <p>{project.description}</p>
           </div>

@@ -31,8 +31,8 @@ export default function ButtonDarkMode() {
     setDarkMode(!darkMode);
   };
 
-  const buttonClassNormal = 'dark-mode-btn';
-  const buttonClassActive = 'dark-mode-btn--active';
+  // const buttonClassNormal = 'dark-mode-btn';
+  // const buttonClassActive = 'dark-mode-btn--active';
 
   return (
     <button className="dark-mode-btn" onClick={toggleDarkMode} ref={buttonRef}>

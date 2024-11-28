@@ -14,6 +14,7 @@ export default function Projects() {
               imageUrl={project.img[0]}
               linkUrl={project.gitHubLink}
               projectName={project.title}
+              description={project.description}
               id={index}
             />
           ))}
