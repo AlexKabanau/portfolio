@@ -109,7 +109,8 @@ export default function Project() {
           </ol>
 
           <div className="link-container">
-            {project.gitHubLink && <BtnGitHub link={project.gitHubLink} />}
+            {project.gitHubLink &&
+              project.gitHubLink.map((link, key) => <BtnGitHub link={link} key={key} />)}
 
             <ButtonLink link={project.deployLink} />
           </div>

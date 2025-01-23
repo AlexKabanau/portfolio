@@ -18,7 +18,7 @@ export default function Home() {
             </li>
             <li className="content-list__item">
               <h2 className="title-2">Backend</h2>
-              <p>NodeJS, Prisma</p>
+              <p>NodeJS, NestJS, Prisma</p>
             </li>
           </ul>
         </div>

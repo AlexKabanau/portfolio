@@ -52,6 +52,33 @@ import wots007 from '../img/projects/wots/007.png';
 
 export const projects = [
   {
+    title: 'RedPlanner',
+    description: 'A full-stack online planner. An analog of Trello with originals features',
+    tools_and_technologies: 'NextJS, TypeScript, Prisma, axios, nextAuth, react-use, zustand, hookForm, bycript, qs, react-dadata, hot-toast, react-insta-stories, tailwind, ShadCN, lucidIcon, zod',
+    responsibilities: [
+      'TailwindCSS, ShadCN, Lucide icons for styles and layout',
+      'Full filtering and product search with server rendering and storing parameters in URI',
+      'Intersection Observer for category highlighting',
+      'Use zustand like a state management',
+      'Use Prisma (. One-to-One, One-to-Many, Many-to-One, Many-to-Many) for backend logic, API for ingredients, API for products',
+      'Product output, adding products to cart',
+      'Authorization and registration using login-password / GitHub / Google',
+      'Use resend for Account confirmation via email',
+      'Use react-hot-toast for notification',
+      'Profile editing',
+      'Purchase of products using Yookassa',
+      'Product output in a modal window or on a separate page (Parallel Routes)',
+      'Sending emails to email upon: registration, order creation and after successful payment',
+      'Vercel for storing database data and deployment applications',
+      'Use react-insta-stories to render Stories',
+    ],
+    img: [
+
+    ],
+    gitHubLink: ['https://github.com/AlexKabanau/red-planner-back-end', 'https://github.com/AlexKabanau/red-planner-front-end'],
+    deployLink: 'https://red-planner-front-end-production.up.railway.app/auth'
+  },
+  {
     title: 'Next Pizza',
     description: 'A full-fledged online store. A real copy of Dodo Pizza',
     tools_and_technologies: 'NextJS, TypeScript, Prisma, axios, nextAuth, react-use, zustand, hookForm, bycript, qs, react-dadata, hot-toast, react-insta-stories, tailwind, ShadCN, lucidIcon, zod',
@@ -88,7 +115,7 @@ export const projects = [
       nextPizza013,
       nextPizza014,
     ],
-    gitHubLink: 'https://github.com/AlexKabanau/NextPizza',
+    gitHubLink: ['https://github.com/AlexKabanau/NextPizza'],
     deployLink: 'https://next-pizza-coral.vercel.app/'
   },
   {
@@ -120,7 +147,7 @@ export const projects = [
       todoList004,
     ],
     // cover: todoList001,
-    gitHubLink: 'https://github.com/AlexKabanau/todolist',
+    gitHubLink: ['https://github.com/AlexKabanau/todolist'],
     link: 'https://todolistbyalexkabanau.netlify.app/'
   },
   {
@@ -150,7 +177,7 @@ export const projects = [
       amazingTrip012,
     ],
     // cover: amazingTrip001,
-    gitHubLink: 'https://github.com/AlexKabanau/rsclone',
+    gitHubLink: ['https://github.com/AlexKabanau/rsclone'],
     link: 'https://alexkabanau.github.io/rsclone/'
   },
   {
@@ -178,7 +205,7 @@ export const projects = [
       reactPizza007,
     ],
     // cover: reactPizza001,
-    gitHubLink: 'https://github.com/AlexKabanau/ReactPizza/tree/master/react_pizza',
+    gitHubLink: ['https://github.com/AlexKabanau/ReactPizza/tree/master/react_pizza'],
     link: 'https://alexkabanau.github.io/ReactPizza/react_pizza/'
   },
   {
@@ -210,7 +237,7 @@ export const projects = [
       wots007,
     ],
     // cover: wots001,
-    gitHubLink: 'https://github.com/AlexKabanau/Way-of-the-Samurai',
+    gitHubLink: ['https://github.com/AlexKabanau/Way-of-the-Samurai'],
     link: 'https://alexkabanau.github.io/rsclone/'
   },
 ]

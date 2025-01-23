@@ -29,7 +29,7 @@ export default function Footer() {
             </li>
           </ul>
           <div className="copyright">
-            <p>© 2024</p>
+            <p>© 2025</p>
           </div>
         </div>
       </div>
