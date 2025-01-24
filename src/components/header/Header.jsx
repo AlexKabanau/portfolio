@@ -1,6 +1,6 @@
 import React from 'react';
 import './style.css';
-import CV from '../../data/CV Alexandr Kabanau 2024.pdf';
+import CV from '../../data/CV Alexandr Kabanau 2025.pdf';
 
 export default function Header() {
   return (
