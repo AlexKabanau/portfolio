@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.50fd8bad.css",
-    "main.js": "/static/js/main.a28aea18.js",
+    "main.css": "/static/css/main.b34af8e8.css",
+    "main.js": "/static/js/main.cfe55257.js",
     "static/js/453.ace21015.chunk.js": "/static/js/453.ace21015.chunk.js",
     "static/media/001.png": "/static/media/001.c79cb39491cd5b800d5a.png",
-    "static/media/009.png": "/static/media/009.2fd1439eb9fbb29e23fc.png",
+    "static/media/009.png": "/static/media/009.df7760f537a55b629db9.png",
     "static/media/007.png": "/static/media/007.65a6e41f39d23b3407ea.png",
-    "static/media/CV Alexandr Kabanau 2024.pdf": "/static/media/CV Alexandr Kabanau 2024.c3d3d6aad20fb5cc7147.pdf",
     "static/media/010.png": "/static/media/010.2c1c30c436b9e451b38f.png",
     "static/media/013.png": "/static/media/013.b47a57b9c4f172efb2e9.png",
     "static/media/014.png": "/static/media/014.db7fee95e7e5796e600a.png",
-    "static/media/008.png": "/static/media/008.5fe8bb021e8502bad7cf.png",
+    "static/media/008.png": "/static/media/008.03736414b146c96e4b77.png",
     "static/media/002.png": "/static/media/002.1602d1a9e5d3cf4adbb0.png",
+    "static/media/CV Alexandr Kabanau 2025.pdf": "/static/media/CV Alexandr Kabanau 2025.c28058cc860e34436657.pdf",
     "static/media/003.png": "/static/media/003.f7bbcba790ab81bf19c2.png",
     "static/media/005.png": "/static/media/005.da3cfd996a3ea57b60af.png",
     "static/media/006.png": "/static/media/006.d042d7d38f4995f54420.png",
@@ -24,16 +24,14 @@
     "static/media/gitHub.svg": "/static/media/gitHub.db1e3cfa3aa61658d837d82e113dc1fe.svg",
     "static/media/gitHub-black.svg": "/static/media/gitHub-black.61157a57f0853aa9fd2f3622b730cdfc.svg",
     "static/media/linkedIn.svg": "/static/media/linkedIn.c05a2ae5b158581b0f27510e1d79e379.svg",
-    "static/media/previous-svgrepo-com.svg": "/static/media/previous-svgrepo-com.3a635122b30bd59670f2.svg",
-    "static/media/next-svgrepo-com.svg": "/static/media/next-svgrepo-com.1b4ab30ea7311ce527ca.svg",
     "index.html": "/index.html",
     "static/media/deploy-rules-svgrepo-com.svg": "/static/media/deploy-rules-svgrepo-com.2207ea1a8522ff1416b8a4bf74e82c1b.svg",
-    "main.50fd8bad.css.map": "/static/css/main.50fd8bad.css.map",
-    "main.a28aea18.js.map": "/static/js/main.a28aea18.js.map",
+    "main.b34af8e8.css.map": "/static/css/main.b34af8e8.css.map",
+    "main.cfe55257.js.map": "/static/js/main.cfe55257.js.map",
     "453.ace21015.chunk.js.map": "/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.50fd8bad.css",
-    "static/js/main.a28aea18.js"
+    "static/css/main.b34af8e8.css",
+    "static/js/main.cfe55257.js"
   ]
 }
