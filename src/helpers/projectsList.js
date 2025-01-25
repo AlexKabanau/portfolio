@@ -49,6 +49,19 @@ import wots005 from '../img/projects/wots/005.png';
 import wots006 from '../img/projects/wots/006.png';
 import wots007 from '../img/projects/wots/007.png';
 
+import red001 from '../img/projects/redplanner/001.png';
+import red002 from '../img/projects/redplanner/002.png';
+import red003 from '../img/projects/redplanner/003.png';
+import red004 from '../img/projects/redplanner/004.png';
+import red005 from '../img/projects/redplanner/005.png';
+import red006 from '../img/projects/redplanner/006.png';
+import red007 from '../img/projects/redplanner/007.png';
+import red008 from '../img/projects/redplanner/008.png';
+import red009 from '../img/projects/redplanner/009.png';
+import red010 from '../img/projects/redplanner/010.png';
+import red011 from '../img/projects/redplanner/011.png';
+import red012 from '../img/projects/redplanner/012.png';
+
 
 export const projects = [
   {
@@ -83,7 +96,18 @@ export const projects = [
       'Sonner for toast notifications',
     ],
     img: [
-
+      red001,
+      red002,
+      red003,
+      red004,
+      red005,
+      red006,
+      red007,
+      red008,
+      red009,
+      red010,
+      red011,
+      red012
     ],
     gitHubLink: ['https://github.com/AlexKabanau/red-planner-back-end', 'https://github.com/AlexKabanau/red-planner-front-end'],
     deployLink: 'https://red-planner-front-end-production.up.railway.app/auth'

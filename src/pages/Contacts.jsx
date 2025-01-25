@@ -13,7 +13,7 @@ export default function Contacts() {
           </li>
           <li className="content-list__item">
             <h2 className="title-2">
-              <a href="https://t.me/unknown_racoon" target="_blank" rel="noreferrer">
+              <a href="https://t.me/alexandrkabanau" target="_blank" rel="noreferrer">
                 Telegram
               </a>{' '}
               /{' '}
