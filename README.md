@@ -1,1 +1,0 @@
-Simple Portfolio by Alexandr Kabanau
