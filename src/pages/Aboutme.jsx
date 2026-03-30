@@ -26,7 +26,7 @@ export default function Aboutme() {
           <li className="content-list__item work_exp">
             <h2 className="title-2">WORK EXPERIENCE</h2>
             <p>
-              <b>2011 – Present</b> - Head of design bureau of excavators and backhoe loaders
+              <b>2011 – 2025</b> - Head of design bureau of excavators and backhoe loaders
             </p>
             <p className="customer">
               <b>Customer</b> : JSC "AMKODOR" - holding managing company
