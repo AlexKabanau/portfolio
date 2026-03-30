@@ -6,12 +6,10 @@
   list-style: none;
 }
 
+/* Base tag */
 .skills-list__tag {
   padding: 6px 14px;
   border-radius: 20px;
-  border: 1px solid rgba(92, 98, 236, 0.35);
-  background-color: rgba(92, 98, 236, 0.08);
-  color: var(--accent);
   font-size: 14px;
   font-weight: 500;
   line-height: 1;
@@ -19,16 +17,38 @@
   transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
-.skills-list__tag:hover {
+/* Advanced — solid accent fill */
+.skills-list__tag--advanced {
+  background-color: var(--accent);
+  border: 1px solid var(--accent);
+  color: #fff;
+}
+
+.skills-list__tag--advanced:hover {
+  opacity: 0.85;
+}
+
+/* Intermediate — accent outline */
+.skills-list__tag--intermediate {
+  border: 1px solid rgba(92, 98, 236, 0.5);
+  background-color: rgba(92, 98, 236, 0.08);
+  color: var(--accent);
+}
+
+.skills-list__tag--intermediate:hover {
   background-color: rgba(92, 98, 236, 0.18);
-  border-color: rgba(92, 98, 236, 0.6);
+  border-color: var(--accent);
 }
 
-.dark .skills-list__tag {
-  background-color: rgba(92, 98, 236, 0.12);
-  border-color: rgba(92, 98, 236, 0.4);
+/* Familiar — muted, subtle */
+.skills-list__tag--familiar {
+  border: 1px solid rgba(92, 98, 236, 0.25);
+  background-color: transparent;
+  color: var(--text-color);
+  opacity: 0.6;
 }
 
-.dark .skills-list__tag:hover {
-  background-color: rgba(92, 98, 236, 0.25);
+.skills-list__tag--familiar:hover {
+  opacity: 0.9;
+  border-color: rgba(92, 98, 236, 0.5);
 }

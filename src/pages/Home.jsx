@@ -26,22 +26,22 @@ export default function Home() {
 
             <ScrollReveal delay={0.1}>
               <li className="content-list__item">
-                <h2 className="title-2">Frontend</h2>
-                <SkillsList skills={SKILLS.frontend} />
+                <h2 className="title-2">Advanced</h2>
+                <SkillsList skills={SKILLS.advanced} level="advanced" />
               </li>
             </ScrollReveal>
 
             <ScrollReveal delay={0.2}>
               <li className="content-list__item">
-                <h2 className="title-2">Backend</h2>
-                <SkillsList skills={SKILLS.backend} />
+                <h2 className="title-2">Intermediate</h2>
+                <SkillsList skills={SKILLS.intermediate} level="intermediate" />
               </li>
             </ScrollReveal>
 
             <ScrollReveal delay={0.25}>
               <li className="content-list__item">
-                <h2 className="title-2">Tools</h2>
-                <SkillsList skills={SKILLS.tools} />
+                <h2 className="title-2">Familiar</h2>
+                <SkillsList skills={SKILLS.familiar} level="familiar" />
               </li>
             </ScrollReveal>
 

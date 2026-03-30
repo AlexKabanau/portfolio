@@ -1,7 +1,7 @@
 import React from 'react';
 import ScrollReveal from '../components/ScrollReveal/ScrollReveal';
 import SkillsList from '../components/SkillsList/SkillsList';
-import { ALL_SKILLS } from '../helpers/skills';
+import { SKILLS } from '../helpers/skills';
 
 const sections = [
   { id: 'summary' },
@@ -35,7 +35,11 @@ export default function Aboutme() {
           <ScrollReveal delay={0.05}>
             <li className="content-list__item">
               <h2 className="title-2">SKILLS</h2>
-              <SkillsList skills={ALL_SKILLS} />
+              <SkillsList skills={SKILLS.advanced} level="advanced" />
+              <br />
+              <SkillsList skills={SKILLS.intermediate} level="intermediate" />
+              <br />
+              <SkillsList skills={SKILLS.familiar} level="familiar" />
             </li>
           </ScrollReveal>
 
