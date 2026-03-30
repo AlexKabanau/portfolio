@@ -7,11 +7,11 @@ import { TIMELINE } from '../helpers/timelineData';
 import useVanta from '../utils/useVanta';
 
 export default function Aboutme() {
-  const vantaRef = useVanta('birds', {
+  const vantaRef = useVanta('birds', (isDark) => ({
     color1: 0x5c62ec,
     color2: 0x9b99f5,
     colorMode: 'lerp',
-    backgroundColor: 0xffffff,
+    backgroundColor: isDark ? 0x252526 : 0xffffff,
     quantity: 2,
     birdSize: 1.0,
     wingSpan: 22,
@@ -21,7 +21,7 @@ export default function Aboutme() {
     cohesion: 40,
     mouseControls: false,
     touchControls: false,
-  });
+  }));
 
   return (
     <section className="section vanta-wrap" ref={vantaRef}>

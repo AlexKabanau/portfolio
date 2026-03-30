@@ -5,16 +5,15 @@ import ScrollReveal from '../components/ScrollReveal/ScrollReveal';
 import useVanta from '../utils/useVanta';
 
 export default function Projects() {
-  const vantaRef = useVanta('dots', {
-    color: 0x5c62ec,
-    color2: 0xf0f0f0,
-    backgroundColor: 0xffffff,
-    size: 2.5,
-    spacing: 38,
-    showLines: false,
-    mouseControls: true,
-    touchControls: true,
-  });
+  const vantaRef = useVanta('fog', (isDark) => ({
+    highlightColor: isDark ? 0x3d4199 : 0xd0d3ff,
+    midtoneColor:   isDark ? 0x2d3280 : 0xebebff,
+    lowlightColor:  isDark ? 0x1a1b3a : 0xffffff,
+    baseColor:      isDark ? 0x252526 : 0xffffff,
+    blurFactor: 0.6,
+    speed: 1.5,
+    zoom: 1.0,
+  }));
 
   return (
     <main className="section vanta-wrap" ref={vantaRef}>
