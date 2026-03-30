@@ -154,12 +154,17 @@ export const projects = [
   },
   {
     title: 'NostrBet',
-    description: 'Part of NOSTR network (a decentralization social network), app for creation disputes with bet (e.g. Who will win Champions League 2024), with the ability to create, view, participate or close (croupier role) disputes.',
-    tools_and_technologies: 'React, Bootstrap, Lodash, React-bootstrap, React-bottom-scroll-listener, React-dom, React-hook-form, React-icons, React-redux, React-router-dom, React-select, nostr-dev-kit/ndk, RTK, localStorage, nostr-tools, webSocket, Webpack, ESLint, Prettier, Git, HTML, SCSS/ SASS, JavaScript',
-    responsibilities: ['Implementing semantic Responsive Web markup using Bootstrap, CSS Modules (Flexbox, CSS Grid)', 'Creating UI Components ( Disputes, DisputeComments, DisputeAnswers, ContacsList, modals), reducers, pages (CreateDet page, Dispute page)', 'Implementing Form validation and submission (React Hook Form, useForm, Controller, React-Select)', 'Implementing functionality for authorized data retrieve using WebSocket and Nostr Dev Kit', 'Implementing data storage by using Redux, localStorage', 'Maintaining code quality participating Code Review and using tools (ESLint, Prettier)'],
+    description: 'Decentralized betting and challenge application built on the Nostr protocol. Users can create bets, challenge friends, submit answers, and resolve disputes — all without a central authority.',
+    tools_and_technologies: 'React, Redux Toolkit, React Hook Form, React Select, React Bootstrap, React Icons, SASS/SCSS, Vite, Nostr (nostr-tools), WebSocket, ESLint, Prettier, Git, JavaScript',
+    responsibilities: [
+      'Developed core betting functionality — form validation with React Hook Form, multiple answer types (text, number, date), and bet management features',
+      'Built comprehensive Answers system — user submissions, privacy controls (hide/show answers), answer validation, and visual states (correct / my / other answers)',
+      'Implemented user management features — search, filtering, and follower management integrated with Nostr protocol',
+      'Created reusable UI components (CreateBet, Answers, UserFilter, ContactsList, modals) with component decomposition for maintainability',
+      'Integrated WebSocket and Nostr Dev Kit for real-time authorized data retrieval',
+      'Managed application state with Redux Toolkit; maintained code quality with ESLint and Prettier',
+    ],
     img: [nosrtBet001],
-    // cover: nosrtBet001,
-    // gitHubLink: 'github.com',
     link: 'https://bet.nostrapps.org/#/login'
   },
   {
