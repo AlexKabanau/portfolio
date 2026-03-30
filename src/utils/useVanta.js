@@ -1,5 +1,4 @@
 import { useEffect, useRef } from 'react';
-import * as THREE from 'three';
 
 const LOADERS = {
   net:   () => import('vanta/dist/vanta.net.min'),
@@ -14,14 +13,32 @@ export default function useVanta(effect, options = {}) {
   useEffect(() => {
     let mounted = true;
 
-    LOADERS[effect]().then((mod) => {
-      if (!mounted || !ref.current || vantaRef.current) return;
-      vantaRef.current = mod.default({ el: ref.current, THREE, ...options });
-    });
+    const init = async () => {
+      try {
+        const [{ default: EFFECT }, THREE] = await Promise.all([
+          LOADERS[effect](),
+          import('three'),
+        ]);
+
+        if (!mounted || !ref.current || vantaRef.current) return;
+
+        vantaRef.current = EFFECT({
+          el: ref.current,
+          THREE,
+          ...options,
+        });
+      } catch (err) {
+        console.warn('[Vanta] effect failed to initialize:', err);
+      }
+    };
+
+    init();
 
     return () => {
       mounted = false;
-      vantaRef.current?.destroy();
+      try {
+        vantaRef.current?.destroy();
+      } catch (_) {}
       vantaRef.current = null;
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps

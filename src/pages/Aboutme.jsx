@@ -7,12 +7,11 @@ import { TIMELINE } from '../helpers/timelineData';
 import useVanta from '../utils/useVanta';
 
 export default function Aboutme() {
-  const isDark = document.documentElement.classList.contains('dark');
   const vantaRef = useVanta('birds', {
     color1: 0x5c62ec,
     color2: 0x9b99f5,
     colorMode: 'lerp',
-    backgroundColor: isDark ? 0x252526 : 0xffffff,
+    backgroundColor: 0xffffff,
     quantity: 2,
     birdSize: 1.0,
     wingSpan: 22,
