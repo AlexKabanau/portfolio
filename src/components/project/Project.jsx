@@ -6,7 +6,10 @@ export default function Project({ imageUrl, projectName, id, description }) {
   return (
     <NavLink to={`/project/${id}`} className="project-card">
       <div className="project-card__img-wrap">
-        <img src={imageUrl} alt={projectName} className="project-card__img" />
+        {imageUrl
+          ? <img src={imageUrl} alt={projectName} className="project-card__img" />
+          : <div className="project-card__placeholder" aria-hidden="true" />
+        }
         <div className="project-card__overlay">
           <span className="project-card__cta">View Details</span>
         </div>

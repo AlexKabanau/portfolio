@@ -65,6 +65,23 @@ import red012 from '../img/projects/redplanner/012.png';
 
 export const projects = [
   {
+    title: 'Production Project — MACH Platform',
+    description: 'Enterprise-grade production web platform for medical technology products management and content delivery. Next.js application integrated with Headless CMS, built within an NX monorepo and Jenkins CI/CD pipeline.',
+    tools_and_technologies: 'React, TypeScript, Next.js (App Router), CSS Modules, Radix UI, Storybook, Jest, React Testing Library, Vitest, Contentstack CMS, TanStack Table, NX Monorepo, Jenkins CI/CD, Git',
+    responsibilities: [
+      'Developed and enhanced critical UI components with full accessibility support (aria-labels, aria-live announcements, focus management for keyboard users)',
+      'Created Storybook stories with play functions for component documentation and visual testing',
+      'Wrote unit tests using Jest and React Testing Library, maintaining test coverage across components',
+      'Delivered features end-to-end: component → tests → Storybook → iterations through PR feedback',
+      'Built data mappers for Contentstack CMS integration and content delivery for B2C and B2B websites',
+      'Optimized layout responsiveness for dynamic content using container-based approaches',
+      'Enhanced modal and scroll behaviour for improved UX',
+      'Fixed accessibility violations: dynamic aria-labels, screen reader support, focus management',
+      'Collaborated with cross-functional teams (PIM, SFMC, CIAM/SAML integrations)',
+    ],
+    img: [],
+  },
+  {
     title: 'RedPlanner',
     description: 'A full-stack online planner. An analog of Trello with originals features',
     tools_and_technologies: 'React, NextJS, TypeScript, NestJs, Prisma, axios, dnd-kit, clsx, argon2, passport, js-cookie, hookForm, sonner, sass, tailwind, lucidIcon',
