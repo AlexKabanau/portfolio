@@ -9,16 +9,18 @@ export default function Aboutme() {
           <li className="content-list__item">
             <h2 className="title-2">SUMMARY</h2>
             <p className="summary">
-              I'm an enthusiastic and detail-oriented Engineer seeking an entry-level
-              JavaScript/Frontend Developer position with Company to use my skills in coding,
-              troubleshooting complex problems, and assisting in the timely completion of projects.
+              Frontend Developer with hands-on experience building production-ready web applications
+              using React, TypeScript, and Next.js. Delivered full-stack projects end-to-end —
+              from REST API design with NestJS and Prisma to polished, responsive UIs. Background
+              in engineering brings strong problem-solving and analytical skills to every project.
             </p>
           </li>
           <li className="content-list__item">
             <h2 className="title-2">SKILLS</h2>
             <p className="skills">
-              JavaScript, TypeScript, React, Responsive Web, HTML, CSS (SASS/SCSS), Redux, Axios,
-              RTK, Three.js, Webpack, Jest
+              JavaScript, TypeScript, React, Next.js, Redux / RTK, TanStack Query, Zustand,
+              Node.js, NestJS, Prisma, HTML, CSS (SASS/SCSS, Tailwind CSS), Axios, Three.js,
+              Webpack, Jest, Git
             </p>
           </li>
           <li className="content-list__item work_exp">
