@@ -1,5 +1,7 @@
 import React from 'react';
 import ScrollReveal from '../components/ScrollReveal/ScrollReveal';
+import SkillsList from '../components/SkillsList/SkillsList';
+import { ALL_SKILLS } from '../helpers/skills';
 
 const sections = [
   { id: 'summary' },
@@ -33,12 +35,7 @@ export default function Aboutme() {
           <ScrollReveal delay={0.05}>
             <li className="content-list__item">
               <h2 className="title-2">SKILLS</h2>
-              <p className="skills">
-                JavaScript, TypeScript, React, Next.js, Redux / RTK, TanStack Query / Table, Zustand,
-                SWR, Node.js, NestJS, Prisma, HTML, CSS (SASS/SCSS, Tailwind CSS, CSS Modules),
-                Radix UI, Storybook, Contentstack CMS, Axios, Three.js, Webpack, Vite,
-                Jest, React Testing Library, Git
-              </p>
+              <SkillsList skills={ALL_SKILLS} />
             </li>
           </ScrollReveal>
 

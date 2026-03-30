@@ -2,6 +2,8 @@ import React from 'react';
 import Header from '../components/header/Header';
 import { NavLink } from 'react-router-dom';
 import ScrollReveal from '../components/ScrollReveal/ScrollReveal';
+import SkillsList from '../components/SkillsList/SkillsList';
+import { SKILLS } from '../helpers/skills';
 
 export default function Home() {
   return (
@@ -25,17 +27,21 @@ export default function Home() {
             <ScrollReveal delay={0.1}>
               <li className="content-list__item">
                 <h2 className="title-2">Frontend</h2>
-                <p>
-                  React, Next.js, TypeScript, JavaScript, Redux / RTK, TanStack Query, Zustand,
-                  HTML, CSS (SASS/SCSS, Tailwind CSS), Axios, Three.js, Webpack, Jest
-                </p>
+                <SkillsList skills={SKILLS.frontend} />
               </li>
             </ScrollReveal>
 
             <ScrollReveal delay={0.2}>
               <li className="content-list__item">
                 <h2 className="title-2">Backend</h2>
-                <p>Node.js, NestJS, Prisma, REST API, JWT</p>
+                <SkillsList skills={SKILLS.backend} />
+              </li>
+            </ScrollReveal>
+
+            <ScrollReveal delay={0.25}>
+              <li className="content-list__item">
+                <h2 className="title-2">Tools</h2>
+                <SkillsList skills={SKILLS.tools} />
               </li>
             </ScrollReveal>
 

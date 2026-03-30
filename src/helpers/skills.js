@@ -1,0 +1,45 @@
+export const SKILLS = {
+  frontend: [
+    'React',
+    'Next.js',
+    'TypeScript',
+    'JavaScript',
+    'Redux / RTK',
+    'TanStack Query',
+    'Zustand',
+    'SWR',
+    'HTML',
+    'CSS',
+    'SASS/SCSS',
+    'Tailwind CSS',
+    'CSS Modules',
+    'Radix UI',
+    'Storybook',
+    'Three.js',
+    'Axios',
+    'Vite',
+    'Webpack',
+  ],
+  backend: [
+    'Node.js',
+    'NestJS',
+    'Prisma',
+    'REST API',
+    'JWT',
+  ],
+  tools: [
+    'Jest',
+    'React Testing Library',
+    'Contentstack CMS',
+    'TanStack Table',
+    'NX Monorepo',
+    'Jenkins CI/CD',
+    'Git',
+  ],
+};
+
+export const ALL_SKILLS = [
+  ...SKILLS.frontend,
+  ...SKILLS.backend,
+  ...SKILLS.tools,
+];
