@@ -4,11 +4,29 @@ import SkillsList from '../components/SkillsList/SkillsList';
 import Timeline from '../components/Timeline/Timeline';
 import { SKILLS } from '../helpers/skills';
 import { TIMELINE } from '../helpers/timelineData';
+import useVanta from '../utils/useVanta';
 
 export default function Aboutme() {
+  const isDark = document.documentElement.classList.contains('dark');
+  const vantaRef = useVanta('birds', {
+    color1: 0x5c62ec,
+    color2: 0x9b99f5,
+    colorMode: 'lerp',
+    backgroundColor: isDark ? 0x252526 : 0xffffff,
+    quantity: 2,
+    birdSize: 1.0,
+    wingSpan: 22,
+    speedLimit: 3,
+    separation: 80,
+    alignment: 40,
+    cohesion: 40,
+    mouseControls: false,
+    touchControls: false,
+  });
+
   return (
     <>
-      <div className="container container_aboutme">
+      <div className="container container_aboutme" ref={vantaRef} style={{ position: 'relative' }}>
         <ul className="content-list">
 
           <ScrollReveal delay={0}>

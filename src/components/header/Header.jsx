@@ -3,6 +3,7 @@ import './style.css';
 import CV from '../../data/CV Alexandr Kabanau 2025.pdf';
 import avatar from '../../img/avatar.jpeg';
 import useTypingEffect from '../../utils/useTypingEffect';
+import useVanta from '../../utils/useVanta';
 
 const ROLES = [
   'a Frontend Developer',
@@ -13,9 +14,19 @@ const ROLES = [
 
 export default function Header() {
   const typed = useTypingEffect(ROLES);
+  const vantaRef = useVanta('net', {
+    color: 0x5c62ec,
+    backgroundColor: 0x171718,
+    points: 9,
+    maxDistance: 22,
+    spacing: 18,
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+  });
 
   return (
-    <header className="header">
+    <header className="header" ref={vantaRef}>
       <div className="header__inner">
         <div className="header__content">
           <h1 className="header__title">

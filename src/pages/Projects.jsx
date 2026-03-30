@@ -2,10 +2,23 @@ import React from 'react';
 import Project from '../components/project/Project';
 import { projects } from '../helpers/projectsList';
 import ScrollReveal from '../components/ScrollReveal/ScrollReveal';
+import useVanta from '../utils/useVanta';
 
 export default function Projects() {
+  const isDark = document.documentElement.classList.contains('dark');
+  const vantaRef = useVanta('dots', {
+    color: 0x5c62ec,
+    color2: isDark ? 0x252526 : 0xf5f5f5,
+    backgroundColor: isDark ? 0x252526 : 0xffffff,
+    size: 2.5,
+    spacing: 38,
+    showLines: false,
+    mouseControls: true,
+    touchControls: true,
+  });
+
   return (
-    <main className="section">
+    <main className="section" ref={vantaRef} style={{ position: 'relative' }}>
       <div className="container">
         <ScrollReveal variant="fadeIn">
           <h2 className="title-1">Projects</h2>
