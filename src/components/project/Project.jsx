@@ -2,37 +2,19 @@ import React from 'react';
 import './style.css';
 import { NavLink } from 'react-router-dom';
 
-export default function Project({ imageUrl, linkUrl, projectName, id, description }) {
+export default function Project({ imageUrl, projectName, id, description }) {
   return (
-    <>
-      {/* <div class="view">
-        <img src="image.gif" />
-        <div class="mask">
-          <h2>Title</h2>
-          <p>Your Text</p>
-          <a href="#" class="info">
-            Read More
-          </a>
-        </div>
-      </div> */}
-
-      <div className="view">
-        <img src={imageUrl} alt="Project img" />
-        <div className="mask">
-          <h2 className="project__title">{projectName}</h2>
-          {/* <p>{description}</p> */}
-          <NavLink to={`/project/${id}`} className="info">
-            Read More
-          </NavLink>
+    <NavLink to={`/project/${id}`} className="project-card">
+      <div className="project-card__img-wrap">
+        <img src={imageUrl} alt={projectName} className="project-card__img" />
+        <div className="project-card__overlay">
+          <span className="project-card__cta">View Details</span>
         </div>
       </div>
-
-      {/* <NavLink to={`/project/${id}`}>
-        <li className="project">
-          <img src={imageUrl} alt="Project img" className="project__img" />
-          <h3 className="project__title">{projectName}</h3>
-        </li>
-      </NavLink> */}
-    </>
+      <div className="project-card__body">
+        <h3 className="project-card__title">{projectName}</h3>
+        <p className="project-card__desc">{description}</p>
+      </div>
+    </NavLink>
   );
 }
