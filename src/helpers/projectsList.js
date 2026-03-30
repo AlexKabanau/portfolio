@@ -272,6 +272,6 @@ export const projects = [
     ],
     // cover: wots001,
     gitHubLink: ['https://github.com/AlexKabanau/Way-of-the-Samurai'],
-    link: 'https://alexkabanau.github.io/rsclone/'
+    link: 'https://alexkabanau.github.io/Way-of-the-Samurai/'
   },
 ]

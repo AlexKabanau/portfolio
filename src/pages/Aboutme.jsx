@@ -74,8 +74,17 @@ export default function Aboutme() {
                   RollingScopesSchool Graduate, 2023
                 </a>
               </li>
-              <li>https://learn.javascript.ru/</li>
-              <li>https://htmlacademy.ru/ (basic course, advanced course, preprocessors)</li>
+              <li>
+                <a href="https://learn.javascript.ru/" target="_blank" rel="noreferrer">
+                  learn.javascript.ru
+                </a>
+              </li>
+              <li>
+                <a href="https://htmlacademy.ru/" target="_blank" rel="noreferrer">
+                  htmlacademy.ru
+                </a>{' '}
+                (basic course, advanced course, preprocessors)
+              </li>
               <li>YouTube courses (Archakov Blog, IT-Kamasutra)</li>
             </ol>
           </li>

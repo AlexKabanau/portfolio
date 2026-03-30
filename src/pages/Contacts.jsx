@@ -26,7 +26,7 @@ export default function Contacts() {
               </a>
             </h2>
             <p>
-              <a href="tel:+37529572870">+375 (29) 572-84-70</a>
+              <a href="tel:+375295728470">+375 (29) 572-84-70</a>
             </p>
           </li>
           <li className="content-list__item">
