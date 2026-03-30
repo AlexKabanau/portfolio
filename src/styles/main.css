@@ -175,6 +175,17 @@ body {
 
 
 
+/* Vanta background wrapper */
+
+.vanta-wrap {
+	position: relative;
+}
+
+.vanta-wrap > * {
+	position: relative;
+	z-index: 1;
+}
+
 /* Back link */
 
 .back-link {

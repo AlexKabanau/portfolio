@@ -18,7 +18,7 @@ export default function Projects() {
   });
 
   return (
-    <main className="section" ref={vantaRef} style={{ position: 'relative' }}>
+    <main className="section vanta-wrap" ref={vantaRef}>
       <div className="container">
         <ScrollReveal variant="fadeIn">
           <h2 className="title-1">Projects</h2>

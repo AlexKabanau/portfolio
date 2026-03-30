@@ -25,8 +25,8 @@ export default function Aboutme() {
   });
 
   return (
-    <>
-      <div className="container container_aboutme" ref={vantaRef} style={{ position: 'relative' }}>
+    <section className="section vanta-wrap" ref={vantaRef}>
+      <div className="container container_aboutme">
         <ul className="content-list">
 
           <ScrollReveal delay={0}>
@@ -105,6 +105,6 @@ export default function Aboutme() {
 
         </ul>
       </div>
-    </>
+    </section>
   );
 }
