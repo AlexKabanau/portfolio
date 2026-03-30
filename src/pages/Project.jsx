@@ -4,6 +4,7 @@ import { useParams, NavLink } from 'react-router-dom';
 import { projects } from '../helpers/projectsList';
 import ButtonLink from '../components/buttonLink/ButtonLink';
 import Slider from '../components/project/Slider';
+import SkillsList from '../components/SkillsList/SkillsList';
 
 export default function Project() {
   const { id } = useParams();
@@ -26,7 +27,10 @@ export default function Project() {
           </div>
 
           <div className="project-details__stack">
-            <p>{project.tools_and_technologies}</p>
+            <SkillsList
+              skills={project.tools_and_technologies.split(',').map((s) => s.trim())}
+              level="intermediate"
+            />
           </div>
 
           <ol className="project-details__responsibilities">
