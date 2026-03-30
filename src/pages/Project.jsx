@@ -39,7 +39,7 @@ export default function Project() {
             {project.gitHubLink &&
               project.gitHubLink.map((link, key) => <BtnGitHub link={link} key={key} />)}
 
-            <ButtonLink link={project.deployLink} />
+            {project.deployLink && <ButtonLink link={project.deployLink} />}
           </div>
         </div>
       </div>

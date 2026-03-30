@@ -272,7 +272,7 @@ body {
 	text-align: center;
 }
 
-.content-list a {
+.content-list a:not(.btn):not(.btn-outline) {
 	color: var(--accent);
 }
 
