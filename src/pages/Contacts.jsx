@@ -1,64 +1,56 @@
 import React from 'react';
+import ScrollReveal from '../components/ScrollReveal/ScrollReveal';
 
 export default function Contacts() {
   return (
     <main className="section">
       <div className="container">
-        <h1 className="title-1">Contacts</h1>
+        <ScrollReveal variant="fadeIn">
+          <h1 className="title-1">Contacts</h1>
+        </ScrollReveal>
 
         <ul className="content-list">
-          <li className="content-list__item">
-            <h2 className="title-2">Email</h2>
-            <p>
-              <a href="mailto:Alexandr.kabanau@gmail.com">Alexandr.kabanau@gmail.com</a>
-            </p>
-          </li>
-
-          <li className="content-list__item">
-            <h2 className="title-2">Messenger</h2>
-            <p>
-              <a href="https://t.me/alexandrkabanau" target="_blank" rel="noreferrer">
-                Telegram
-              </a>
-              {' / '}
-              <a href="https://wa.me/375295728470" target="_blank" rel="noreferrer">
-                WhatsApp
-              </a>
-              {' / '}
-              <a href="https://join.skype.com/invite/puSD1P4ynuct" target="_blank" rel="noreferrer">
-                Skype
-              </a>
-            </p>
-            <p>
-              <a href="tel:+375295728470">+375 (29) 572-84-70</a>
-            </p>
-          </li>
-
-          <li className="content-list__item">
-            <h2 className="title-2">LinkedIn</h2>
-            <p>
-              <a
-                href="https://www.linkedin.com/in/alexandr-kabanau/"
-                target="_blank"
-                rel="noreferrer">
-                linkedin.com/in/alexandr-kabanau
-              </a>
-            </p>
-          </li>
-
-          <li className="content-list__item">
-            <h2 className="title-2">GitHub</h2>
-            <p>
-              <a href="https://github.com/AlexKabanau" target="_blank" rel="noreferrer">
-                github.com/AlexKabanau
-              </a>
-            </p>
-          </li>
-
-          <li className="content-list__item">
-            <h2 className="title-2">Location</h2>
-            <p>Minsk, Belarus</p>
-          </li>
+          {[
+            <li className="content-list__item">
+              <h2 className="title-2">Email</h2>
+              <p><a href="mailto:Alexandr.kabanau@gmail.com">Alexandr.kabanau@gmail.com</a></p>
+            </li>,
+            <li className="content-list__item">
+              <h2 className="title-2">Messenger</h2>
+              <p>
+                <a href="https://t.me/alexandrkabanau" target="_blank" rel="noreferrer">Telegram</a>
+                {' / '}
+                <a href="https://wa.me/375295728470" target="_blank" rel="noreferrer">WhatsApp</a>
+                {' / '}
+                <a href="https://join.skype.com/invite/puSD1P4ynuct" target="_blank" rel="noreferrer">Skype</a>
+              </p>
+              <p><a href="tel:+375295728470">+375 (29) 572-84-70</a></p>
+            </li>,
+            <li className="content-list__item">
+              <h2 className="title-2">LinkedIn</h2>
+              <p>
+                <a href="https://www.linkedin.com/in/alexandr-kabanau/" target="_blank" rel="noreferrer">
+                  linkedin.com/in/alexandr-kabanau
+                </a>
+              </p>
+            </li>,
+            <li className="content-list__item">
+              <h2 className="title-2">GitHub</h2>
+              <p>
+                <a href="https://github.com/AlexKabanau" target="_blank" rel="noreferrer">
+                  github.com/AlexKabanau
+                </a>
+              </p>
+            </li>,
+            <li className="content-list__item">
+              <h2 className="title-2">Location</h2>
+              <p>Minsk, Belarus</p>
+            </li>,
+          ].map((item, i) => (
+            <ScrollReveal key={i} delay={i * 0.1}>
+              {item}
+            </ScrollReveal>
+          ))}
         </ul>
       </div>
     </main>
