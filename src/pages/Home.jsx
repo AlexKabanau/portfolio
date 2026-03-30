@@ -12,10 +12,11 @@ export default function Home() {
           <ul className="content-list">
             <li className="content-list__item">
               <p>
-                I build fast, responsive web applications with clean code and great UX.
-                Experienced in the full development cycle — from designing REST APIs to
-                delivering polished React interfaces. Former mechanical engineer: I bring
-                structured thinking and attention to detail to every project.
+                Frontend Developer at EPAM Systems with 1.5 years of experience in IT.
+                Working on enterprise-grade applications (Johnson &amp; Johnson Medtech) using
+                React, TypeScript, and Next.js. Full-stack background with NestJS and Prisma.
+                Former mechanical engineer — I bring structured thinking and attention to detail
+                to every line of code.
               </p>
             </li>
 
