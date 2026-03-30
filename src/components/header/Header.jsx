@@ -15,11 +15,11 @@ const ROLES = [
 export default function Header() {
   const typed = useTypingEffect(ROLES);
   const vantaRef = useVanta('net', {
-    color: 0x5c62ec,
-    backgroundColor: 0x171718,
-    points: 9,
-    maxDistance: 22,
-    spacing: 18,
+    color: 0x2d3280,
+    backgroundColor: 0x0d0e1a,
+    points: 7,
+    maxDistance: 18,
+    spacing: 22,
     mouseControls: true,
     touchControls: true,
     gyroControls: false,

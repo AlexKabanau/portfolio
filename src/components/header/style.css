@@ -32,6 +32,7 @@
 	font-size: 40px;
 	font-weight: 700;
 	line-height: 1.4;
+	text-shadow: 0 2px 24px rgba(0, 0, 0, 0.9);
 }
 
 .header__title strong {
@@ -42,6 +43,7 @@
 .header__title em {
 	font-style: normal;
 	color: var(--accent);
+	text-shadow: 0 0 30px rgba(92, 98, 236, 0.6);
 }
 
 .header__typed {
@@ -67,6 +69,7 @@
 	font-size: 18px;
 	line-height: 1.333;
 	opacity: 0.8;
+	text-shadow: 0 1px 12px rgba(0, 0, 0, 0.8);
 }
 
 /* Photo */
@@ -85,12 +88,14 @@
 	height: 100%;
 	object-fit: cover;
 	object-position: center top;
-	filter: grayscale(20%);
-	transition: filter 0.3s ease;
+	filter: grayscale(100%) brightness(0.9) contrast(1.1);
+	mix-blend-mode: luminosity;
+	transition: filter 0.4s ease;
 }
 
 .header__photo-wrap:hover .header__photo {
-	filter: grayscale(0%);
+	filter: grayscale(0%) brightness(0.95);
+	mix-blend-mode: normal;
 }
 
 /* Mobile */
