@@ -7,8 +7,10 @@ import Slider from '../components/project/Slider';
 import SkillsList from '../components/SkillsList/SkillsList';
 
 export default function Project() {
-  const { id } = useParams();
-  const project = projects[id];
+  const { id } = useParams<{ id: string }>();
+  const project = projects[Number(id)];
+
+  if (!project) return null;
 
   return (
     <main className="section">

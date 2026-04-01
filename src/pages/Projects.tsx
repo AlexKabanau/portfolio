@@ -16,7 +16,7 @@ export default function Projects() {
   }));
 
   return (
-    <main className="section vanta-wrap" ref={vantaRef}>
+    <main className="section vanta-wrap" ref={vantaRef as React.RefObject<HTMLElement>}>
       <div className="container">
         <ScrollReveal variant="fadeIn">
           <h2 className="title-1">Projects</h2>
@@ -26,7 +26,6 @@ export default function Projects() {
             <ScrollReveal key={index} delay={index * 0.08}>
               <Project
                 imageUrl={project.img[0]}
-                linkUrl={project.gitHubLink}
                 projectName={project.title}
                 description={project.description}
                 id={index}

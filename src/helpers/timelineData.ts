@@ -1,4 +1,6 @@
-export const TIMELINE = [
+import type { TimelineEvent } from '../types';
+
+export const TIMELINE: TimelineEvent[] = [
   {
     date: 'Jun 2025 – Present',
     title: 'Frontend Developer',

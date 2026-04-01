@@ -1,4 +1,9 @@
+import { type ReactNode } from 'react';
 import { motion } from 'framer-motion';
+
+interface PageTransitionProps {
+  children: ReactNode;
+}
 
 const variants = {
   initial:  { opacity: 0, y: 16 },
@@ -6,7 +11,7 @@ const variants = {
   exit:     { opacity: 0, y: -8 },
 };
 
-export default function PageTransition({ children }) {
+export default function PageTransition({ children }: PageTransitionProps) {
   return (
     <motion.div
       variants={variants}

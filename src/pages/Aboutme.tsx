@@ -24,7 +24,7 @@ export default function Aboutme() {
   }));
 
   return (
-    <section className="section vanta-wrap" ref={vantaRef}>
+    <section className="section vanta-wrap" ref={vantaRef as React.RefObject<HTMLElement>}>
       <div className="container container_aboutme">
         <ul className="content-list">
 

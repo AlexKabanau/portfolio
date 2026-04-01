@@ -5,23 +5,21 @@ const DELETING_SPEED = 45;
 const PAUSE_AFTER_TYPE = 2000;
 const PAUSE_BEFORE_TYPE = 400;
 
-export default function useTypingEffect(roles) {
+export default function useTypingEffect(roles: string[]): string {
   const [displayed, setDisplayed] = useState('');
   const [roleIndex, setRoleIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const timeout = useRef(null);
+  const timeout = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
     const current = roles[roleIndex];
 
     if (!isDeleting && displayed === current) {
-      // Finished typing — pause then start deleting
       timeout.current = setTimeout(() => setIsDeleting(true), PAUSE_AFTER_TYPE);
       return;
     }
 
     if (isDeleting && displayed === '') {
-      // Finished deleting — pause then move to next role
       timeout.current = setTimeout(() => {
         setIsDeleting(false);
         setRoleIndex((i) => (i + 1) % roles.length);
@@ -35,10 +33,10 @@ export default function useTypingEffect(roles) {
 
     timeout.current = setTimeout(
       () => setDisplayed(next),
-      isDeleting ? DELETING_SPEED : TYPING_SPEED
+      isDeleting ? DELETING_SPEED : TYPING_SPEED,
     );
 
-    return () => clearTimeout(timeout.current);
+    return () => clearTimeout(timeout.current ?? undefined);
   }, [displayed, isDeleting, roleIndex, roles]);
 
   return displayed;

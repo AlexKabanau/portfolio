@@ -26,7 +26,7 @@ export default function Header() {
   });
 
   return (
-    <header className="header" ref={vantaRef}>
+    <header className="header" ref={vantaRef as React.RefObject<HTMLElement>}>
       <div className="header__inner">
         <div className="header__content">
           <h1 className="header__title">

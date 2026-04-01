@@ -1,6 +1,16 @@
-import { motion } from 'framer-motion';
+import { type ReactNode } from 'react';
+import { motion, type Variants } from 'framer-motion';
 
-const variants = {
+type VariantKey = 'fadeUp' | 'fadeIn' | 'fadeLeft';
+
+interface ScrollRevealProps {
+  children: ReactNode;
+  variant?: VariantKey;
+  delay?: number;
+  className?: string;
+}
+
+const variants: Record<VariantKey, Variants> = {
   fadeUp: {
     hidden: { opacity: 0, y: 40 },
     visible: { opacity: 1, y: 0 },
@@ -20,7 +30,7 @@ export default function ScrollReveal({
   variant = 'fadeUp',
   delay = 0,
   className,
-}) {
+}: ScrollRevealProps) {
   return (
     <motion.div
       className={className}

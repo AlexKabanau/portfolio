@@ -1,4 +1,6 @@
-export const SKILLS = {
+import type { Skills } from '../types';
+
+export const SKILLS: Skills = {
   advanced: [
     'HTML / CSS',
     'JavaScript',
@@ -31,7 +33,7 @@ export const SKILLS = {
   ],
 };
 
-export const ALL_SKILLS = [
+export const ALL_SKILLS: string[] = [
   ...SKILLS.advanced,
   ...SKILLS.intermediate,
   ...SKILLS.familiar,

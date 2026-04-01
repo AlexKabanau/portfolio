@@ -1,7 +1,17 @@
 import React, { useState } from 'react';
 import './style.css';
+import type { TimelineEvent } from '../../types';
 
-export default function Timeline({ events }) {
+interface TimelineProps {
+  events: TimelineEvent[];
+}
+
+interface TimelineItemProps {
+  event: TimelineEvent;
+  index: number;
+}
+
+export default function Timeline({ events }: TimelineProps) {
   return (
     <div className="timeline">
       {events.map((event, index) => (
@@ -11,7 +21,7 @@ export default function Timeline({ events }) {
   );
 }
 
-function TimelineItem({ event }) {
+function TimelineItem({ event }: TimelineItemProps) {
   const [expanded, setExpanded] = useState(false);
 
   return (

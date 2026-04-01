@@ -2,7 +2,14 @@ import React from 'react';
 import './style.css';
 import { NavLink } from 'react-router-dom';
 
-export default function Project({ imageUrl, projectName, id, description }) {
+interface ProjectCardProps {
+  imageUrl?: string;
+  projectName: string;
+  id: number;
+  description: string;
+}
+
+export default function Project({ imageUrl, projectName, id, description }: ProjectCardProps) {
   return (
     <NavLink to={`/project/${id}`} className="project-card">
       <div className="project-card__img-wrap">
